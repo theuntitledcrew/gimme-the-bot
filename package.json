@@ -1,0 +1,37 @@
+{
+  "name": "gimme-the-bot",
+  "version": "0.0.1",
+  "description": "The discord bot that gives.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theuntitledcrew/gimme-the-bot.git"
+  },
+  "author": "Joey Ortiz <joey@joeyortiz.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theuntitledcrew/gimme-the-bot/issues"
+  },
+  "homepage": "https://github.com/TheUntitledCrew/gimme-the-bot#readme",
+  "dependencies": {
+    "better-sqlite-pool": "^0.3.0",
+    "better-sqlite3": "^7.1.1",
+    "chalk": "^4.0.0",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.1.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
