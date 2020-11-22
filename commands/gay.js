@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
-    const data = await fetch(`http://www.reddit.com/r/gaynsfw/top/.json?sort=top&t=all&limit=50`)
+  const data = await fetch(`http://www.reddit.com/r/gaynsfw/top/.json?sort=top&t=all&limit=50`)
     .then(response => response.json())
     .then(body => body.data);
   let isImage = false
@@ -16,19 +16,18 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
   }
   const imageURL = data.children[randomSelection].data.url
   return message.channel.send(new MessageEmbed().setImage(`${imageURL}`));
-  };
-  
-  exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ["gaypics"],
-    permLevel: "User"
-  };
-  
-  exports.help = {
-    name: "gay",
-    category: "NSFW",
-    description: "Gay pics..",
-    usage: "gay"
-  };
-  
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["gaypics"],
+  permLevel: "User"
+};
+
+exports.help = {
+  name: "gay",
+  category: "NSFW",
+  description: "Gay pics..",
+  usage: "gay"
+};
